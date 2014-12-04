@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ja" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJSの練習</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+	<script src="myscript.js"></script>
+	<style type="text/css">
+		.even {
+			background: #ccc;
+		}
+		.odd {
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>AngularJSの練習</h1>
+<!-- 	<input type="text" ng-model="name">
+	<p>こんにちは {{name}}</p>
+	<p>こんにちは {{5 * 3 * 3}}</p> -->
+
+	<div ng-controller="mainCtrl">
+		<p>{{users.length}} users.</p>
+		<ul>
+			<li ng-repeat="user in users"  ng-controller="userItemCtrl">
+				{{user.name}} {{user.score}} 
+				<button ng-click="increment()">+1</button>
+			</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>
+
+
