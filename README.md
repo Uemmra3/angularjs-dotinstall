@@ -1,0 +1,4 @@
+angularjs-dotinstall
+====================
+
+angularJS trial
